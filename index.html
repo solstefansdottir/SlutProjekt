@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dansstudion Flow | Hem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">FLOW</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="#styles">Dansstilar</a></li>
+                <li><a href="#register">Anmälan</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">&#9681; Ljust läge</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hitta din rytm</h1>
+                <p>Välkommen till stans mest passionerade dansförening.</p>
+                <a href="#register" class="btn">Bli medlem idag</a>
+            </div>
+        </section>
+
+        <section id="styles" class="content-section">
+            <h2 class="section-title">Våra Dansstilar</h2>
+            <div class="style-grid">
+                <div class="style-card">
+                    <h3>Streetdance</h3>
+                    <p>Kraft, attityd och gemenskap.</p>
+                    <a href="streetdans.html" class="read-more-link" target="_blank">Läs mer</a>
+                </div>
+                <div class="style-card">
+                    <h3>Balett</h3>
+                    <p>Elegans, teknik och styrka.</p>
+                    <a href="balett.html" class="read-more-link" target="_blank">Läs mer</a>
+                </div>
+                <div class="style-card">
+                    <h3>Jazz</h3>
+                    <p>Rytm, uttryck och glädje.</p>
+                    <a href="jazz.html" class="read-more-link" target="_blank">Läs mer</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="register" class="form-section">
+            <h2>Anmäl dig till en kurs</h2>
+            <form id="signup-form">
+                <div class="input-group">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <button type="submit" class="submit-btn">Skicka ansökan</button>
+            </form>
+            <div id="form-feedback"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dansstudion Flow </p>
+    </footer>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
